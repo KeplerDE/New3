@@ -21,3 +21,6 @@ urlpatterns = [
     path('horoscope/', include('horoscope.urls')),
 
 ]
+
+
+#проверяем Коммиты
