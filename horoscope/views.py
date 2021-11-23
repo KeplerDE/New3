@@ -33,14 +33,14 @@ def index(request):
     response = f"""
     <ul>
         {li_elements}
-    <ul>
+    <ul>    
     """
     return HttpResponse(response)
 
 
 def get_info_about_sign_zodiac(request, sign_zodiac: str):
-    response = render_to_string('horoscope/info_zodiac.html')
-    return HttpResponse(response)
+    description = zodiac_dict.get(sign_zodiac)
+    return render(response, 'horoscope/info_zodiac.html')
 
 
 def get_info_about_sign_zodiac_by_number(request, sign_zodiac: int):
