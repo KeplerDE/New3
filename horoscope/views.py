@@ -40,7 +40,16 @@ def index(request):
 
 def get_info_about_sign_zodiac(request, sign_zodiac: str):
     description = zodiac_dict.get(sign_zodiac)
-    return render(response, 'horoscope/info_zodiac.html')
+    data = {
+        'description': description,
+        'sign': sign_zodiac.title(),
+        'my_int': 111,
+        'my_float': 111.4,
+        'my_list':  [1,2,3],
+        'my_tuple': (1,2,3,4,5),
+        'my_dict': {'name': 'Lucy', 'age': 27}
+        }
+    return render(request, 'horoscope/info_zodiac.html', context=data)
 
 
 def get_info_about_sign_zodiac_by_number(request, sign_zodiac: int):

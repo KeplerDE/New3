@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Гороскоп</title>
+    <title>Гороскоп для {sign}</title>
 </head>
 <body>
-<h1>Приложение Гороскоп</h1>
-<h2>description</h2>
+    <h1>Приложение Гороскоп</h1>
+    <h2> {{ description }} </h2>
+    <p>Число {{my_int }} </p>
+    <p> Число вещественое {{ my_float }} </p>
+    <p> Spisok {{ my_list }}</p>
+    <p> Кортеж {{ my_tuple }}</p>
+    <p> Словарь {{ my_dict }}, ключ - { my_dict.name }</p>
+
 </body>
 </html>
