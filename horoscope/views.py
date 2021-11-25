@@ -45,7 +45,7 @@ def get_info_about_sign_zodiac(request, sign_zodiac: str):
         'sign': sign_zodiac.title(),
         'my_int': 111,
         'my_float': 111.4,
-        'my_list':  [1,2,3],
+        'my_list':  [],
         'my_tuple': (1,2,3,4,5),
         'my_dict': {'name': 'Lucy', 'age': 27}
         }

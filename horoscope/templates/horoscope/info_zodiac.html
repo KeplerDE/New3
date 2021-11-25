@@ -6,7 +6,27 @@
 </head>
 <body>
     <h1>Приложение Гороскоп</h1>
-    <h2> {{ description }} </h2>
+
+    {% if description is None %}
+        <h2>  Неправильный знак зодиака {{sign|upper}}</h2>
+    {% else %}
+        <h2> {{ description|title|safe }} </h2>
+    {%  endif %}
+
+
+    {% if my_list|length >= 3 %}
+        <p>Список из 3х или более элементов - {{ my_list }}</p>
+    {% elif my_list|length == 2 %}
+        <p>Список более 2х или более элементов - {{ my_list }}</p>
+     {% elif my_list|length == 1 %}
+        p>Список более 1 или более элементов - {{ my_list }}</p>
+      {% else %}
+        <h2> <p> Пустой список {{my_list}} </p> </h2>
+    {%  endif %}
+
+
+
+
     <p>Число {{my_int }} </p>
     <p> Число вещественое {{ my_float }} </p>
     <p> Spisok {{ my_list }}</p>
