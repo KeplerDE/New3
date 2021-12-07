@@ -5,12 +5,11 @@
     <title>Гороскоп для {{sign|upper}} d</title>
 </head>
 <body>
-    <h1>Приложение Гороскоп</h1>
 
     {% if description is None %}
         <h2>  Неправильный знак зодиака {{sign|upper}}</h2>
     {% else %}
-        <h2> {{ description|title|safe }} </h2>
+        <h2> {{ description|capfirst|safe }} </h2>
     {%  endif %}
 
 
