@@ -1,0 +1,48 @@
+
+
+html{
+    background-color: #3199dc;
+}
+
+nav {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+nav a {
+    color: white;
+    display: block;
+    font-size: 2rem;
+    margin: 20px;
+}
+
+nav a:hover, ul a:active {
+  color: #eca8b5;
+}
+
+######################
+info.css
+
+h2 {
+    color: #d2d2e5;
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 30px;
+}
+
+h1 {
+    color: #e8dede;
+    text-align: center;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}

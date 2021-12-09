@@ -13,10 +13,11 @@
 
 {% block content %}
     {% include 'includes/navbar.html' %}
+    <h2 > Овен </h2>
     {% if description is None %}
-        <h2>  Неправильный знак зодиака {{sign|upper}}</h2>
+        <h2>  Неправильный знак зодиака {{sign|upper}} </h2>
     {% else %}
-        <h2> {{ description|capfirst|safe }} </h2>
+        <h1> {{ description|capfirst|safe }} </h1>
     {%  endif %}
 {% endblock %}
 
